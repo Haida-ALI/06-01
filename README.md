@@ -1,2 +1,30 @@
-# 06-01
-06-01 Countdown to launch
+# Countdown to launch program
+
+# -------------------------
+# Import libraries
+# -------------------------
+import time
+
+
+# -------------------------
+# Subprograms
+# -------------------------
+def countdown():
+    print("T minus...")
+    for counter in range(10, 0, -1):
+        print (counter, "...")
+        if counter == 9:
+          time.sleep(1)
+          print('Ignition sequence start.')
+        time.sleep(1)
+    print("0 ...")
+    print("All engines running.")
+    print("Lift off, we have a lift off on Artemis 1.")
+    time.sleep(1)
+    print("Tower clear.")
+    
+    
+# -------------------------
+# Main program
+# -------------------------
+countdown()
